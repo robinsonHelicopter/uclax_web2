@@ -8,15 +8,30 @@ body {
 .container {
 	width: 960px;
 	height: 320px;
+	position: relative;
 
 }
 
-.gallery {
+.gallery_column_1 {
     background-color: #999;
+	height: 320px;
     width: 320px;
+	position: absolute;
+	float:left;
     display: flex;
     flex-direction: row;
 	flex-wrap: wrap;
+}
+
+.gallery_column_2 {
+	background-color: #999;
+	height: 320px;
+	width: 640px;
+	float: right;
+
+	/*
+	display: flex;
+	flex-direction: row; */
 }
 
 .thumbs {
@@ -24,10 +39,12 @@ body {
 	height: 80px;
 }
 
-.large {
-	width: 640px;
-	height: 320px;
-	position: absolute;
-	top: 47px; right: 78px;
 
+.gallery_column_2_.large {
+	width: 600px;
+	height: 320px;
+	float: right;
+	position: absolute;
+	top: 20px;
+	left: 20px;
 }

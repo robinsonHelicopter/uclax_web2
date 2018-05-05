@@ -1,84 +1,58 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Remote Swap</title>
-		<link rel="stylesheet" href="./css/styles.css">
-		<style>
-			.remote {
-				border: solid teal 10px;
-				width: 960px;
-				height: 320px;
-				margin: 25px auto;
-				background-color: white;
-			}
-			/*Thumbnails on the right or left*/
-			.remote .thumbs {}
 
-			/*Large opposite of the thumbnails (e.g. right or left)*/
-			.remote .large {}
-		</style>
-	</head>
-	<body>
-		<h1>Remote Swap</h1>
+<head>
+	<meta charset="utf-8">
+	<title>Remote Swap</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<style>
+		.remote {
+			border: solid teal 10px;
+			width: 960px;
+			height: 320px;
+			margin: 25px auto;
+			background-color: white;
+		}
+	</style>
+</head>
 
-		<div class="remote">
-			<div class="gallery">
-				<!--Thumbnails Go Here -->
-				<img src="./img/small/1Thumb.jpg" class="thumbs">
-				<img src="./img/small/2Thumb.jpg" class="thumbs">
-				<img src="./img/small/3Thumb.jpg" class="thumbs">
-				<img src="./img/small/4Thumb.jpg" class="thumbs">
-				<img src="./img/small/5Thumb.jpg" class="thumbs">
-				<img src="./img/small/6Thumb.jpg" class="thumbs">
-				<img src="./img/small/7Thumb.jpg" class="thumbs">
-				<img src="./img/small/8Thumb.jpg" class="thumbs">
-				<img src="./img/small/9Thumb.jpg" class="thumbs">
-				<img src="./img/small/10Thumb.jpg" class="thumbs">
-				<img src="./img/small/11Thumb.jpg" class="thumbs">
-				<img src="./img/small/12Thumb.jpg" class="thumbs">
-				<img src="./img/small/13Thumb.jpg" class="thumbs">
-				<img src="./img/small/14Thumb.jpg" class="thumbs">
-				<img src="./img/small/15Thumb.jpg" class="thumbs">
-				<img src="./img/small/16Thumb.jpg" class="thumbs">
+<body>
+
+	<h1>Remote Swap</h1>
+
+	<div class="remote">
+
+		<div class="gallery_column_1">
+			<!--Thumbnails Go Here -->
+			<img src="./img/small/1Thumb.jpg" class="thumbs">
+			<img src="./img/small/2Thumb.jpg" class="thumbs">
+			<img src="./img/small/3Thumb.jpg" class="thumbs">
+			<img src="./img/small/4Thumb.jpg" class="thumbs">
+			<img src="./img/small/5Thumb.jpg" class="thumbs">
+			<img src="./img/small/6Thumb.jpg" class="thumbs">
+			<img src="./img/small/7Thumb.jpg" class="thumbs">
+			<img src="./img/small/8Thumb.jpg" class="thumbs">
+			<img src="./img/small/9Thumb.jpg" class="thumbs">
+			<img src="./img/small/10Thumb.jpg" class="thumbs">
+			<img src="./img/small/11Thumb.jpg" class="thumbs">
+			<img src="./img/small/12Thumb.jpg" class="thumbs">
+			<img src="./img/small/13Thumb.jpg" class="thumbs">
+			<img src="./img/small/14Thumb.jpg" class="thumbs">
+			<img src="./img/small/15Thumb.jpg" class="thumbs">
+			<img src="./img/small/16Thumb.jpg" class="thumbs">
 		</div>
 
-			<div class="large">
+		<div class="gallery_column_2">
+
+			<div class="gallery_column_2_large">
 				<!-- Large Goes Here -->
 				<img src="./img/large/1Big.jpg" class="large">
-				<img src="./img/large/2Big.jpg" class="large">
-				<img src="./img/large/3Big.jpg" class="large">
-				<img src="./img/large/4Big.jpg" class="large">
-				<img src="./img/large/5Big.jpg" class="large">
-				<img src="./img/large/6Big.jpg" class="large">
-				<img src="./img/large/7Big.jpg" class="large">
-				<img src="./img/large/8Big.jpg" class="large">
-				<img src="./img/large/9Big.jpg" class="large">
-				<img src="./img/large/10Big.jpg" class="large">
-				<img src="./img/large/11Big.jpg" class="large">
-				<img src="./img/large/12Big.jpg" class="large">
-				<img src="./img/large/13Big.jpg" class="large">
-				<img src="./img/large/14Big.jpg" class="large">
-				<img src="./img/large/15Big.jpg" class="large">
-				<img src="./img/large/16Big.jpg" class="large">
 			</div>
-
-
 		</div>
+	</div>
 
-		<script>
-					var large = document.querySelectorAll('.large');
-					var thumbs = document.querySelectorAll('.thumbs');
+</body>
 
-					console.log('Large', large[0]);
-					console.log('Thumbnails', thumbs);
-					console.log('Thumb 1', thumbs[0]);
+<script src="./js/scripts.js"></script>
 
-					thumbs[1].addEventListener('mouseover', function() {
-						console.log('you got me! Partner!!')
-						large[0].src = './img/large/1Big.jpg';
-					});
-
-		</script>
-	</body>
 </html>
